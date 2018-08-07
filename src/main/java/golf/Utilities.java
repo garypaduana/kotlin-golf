@@ -22,6 +22,10 @@ public class Utilities implements Utility {
 
     public long factorial(long number){
 
+        if (number < 0) {
+            throw new IllegalArgumentException("number must be >= 0");
+        }
+
         if(number == 0){
             return 1;
         }
